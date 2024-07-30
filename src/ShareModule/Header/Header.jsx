@@ -213,8 +213,8 @@ function Header() {
               )}
               {!isLogin && (
                 <>
-                  <Button color="info" variant="outlined" component={Link} to="/register" sx={{ margin: 2 }}>Sign Up</Button>
-                  <Button color="info" variant="outlined" component={Link} to="/login">Sign In</Button>
+                  <Button color="secondary" variant="outlined" component={Link} to="/register" sx={{ margin: 2 }}>Sign Up</Button>
+                  <Button color="secondary" variant="outlined" component={Link} to="/login">Sign In</Button>
                 </>
               )}
             </Box>
