@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Grid, Typography, TextField, Button, Paper } from '@mui/material';
+import { Box, Grid, Typography, TextField, Button } from '@mui/material';
 import './Contact.css'; 
 
 const Contact = () => {

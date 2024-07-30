@@ -31,16 +31,16 @@ const Home = () => {
             </svg>
           </button>
           <div className="home_social_icons">
-            <a>
+            <a href= "#h">
               <i className="bx bxl-facebook"></i>
             </a>
-            <a>
+            <a href="#h">
               <i className="bx bxl-twitter"></i>
             </a>
-            <a>
+            <a href="#h">
               <i className="bx bxl-pinterest"></i>
             </a>
-            <a>
+            <a href= "#h">
               <i className="bx bxl-instagram"></i>
             </a>
           </div>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Header from '../ShareModule/Header/Header.jsx';
 import Footer from '../ShareModule/Footer/Footer.jsx';
@@ -60,7 +60,7 @@ export default function Rout(){
     ];
     useEffect(()=>{
         dispatch(check_token()) 
-     },[])
+     },[dispatch])
      
     function PrivateRoute({children}){
         const token = localStorage.getItem("token")|| sessionStorage.getItem("token");

@@ -6,13 +6,14 @@ import { Box, Grid, TextField, Typography, Button } from "@mui/material";
 import { useForm } from "react-hook-form";
 import "./EditProduct.css"
 const EditProduct = () => {
+  const { id } = useParams();
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { id } = useParams();
+  
   
   useEffect(() => {
     dispatch(product_edit(id));
-  }, [id]);
+  },[id]);
 
   const { product } = useSelector((state) => state.productt);
   const { register, handleSubmit, setValue, formState: { errors } } = useForm();
