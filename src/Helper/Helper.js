@@ -13,7 +13,6 @@ const profilePicBaseUrl = 'https://wtsacademy.dedicateddevelopers.us/uploads/use
 const profile_Url = (media) => {
     return `${profilePicBaseUrl}${media}`;
 };
-const profile_pic="s/upload"
 // Interceptor to add authentication token to request headers
 axiosInstance.interceptors.request.use(
     async function(config) {
