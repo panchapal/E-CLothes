@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { Box, Button, Grid, TextField, Typography, Alert } from '@mui/material';
+import { Box, Button, Grid, TextField, Typography} from '@mui/material';
 import { registerUser } from '../../Redux/authSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import "./Register.css"
 const Register = () => {
-  const { upload_status, registrationError } = useSelector((state) => state.contents);
+  const { upload_status } = useSelector((state) => state.contents);
   const [file, setFile] = useState(null);
   const navigate = useNavigate();
   const dispatch = useDispatch();

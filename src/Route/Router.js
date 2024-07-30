@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Header from '../ShareModule/Header/Header.jsx';
 import Footer from '../ShareModule/Footer/Footer.jsx';

@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { configureStore } from '@reduxjs/toolkit';
 import { authSlice } from './authSlice';
 import Cartslice from './cartSlice';

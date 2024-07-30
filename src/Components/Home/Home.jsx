@@ -1,5 +1,5 @@
-import axios from "axios";
-import React, { useState, useEffect } from "react";
+// import axios from "axios";
+import React from "react";
 import "./Home.css";
 import Image from "../../Assets/shopping-concept-with-couple-space.jpg";
 
@@ -31,16 +31,16 @@ const Home = () => {
             </svg>
           </button>
           <div className="home_social_icons">
-            <a href="#">
+            <a>
               <i className="bx bxl-facebook"></i>
             </a>
-            <a href="#">
+            <a>
               <i className="bx bxl-twitter"></i>
             </a>
-            <a href="#">
+            <a>
               <i className="bx bxl-pinterest"></i>
             </a>
-            <a href="#">
+            <a>
               <i className="bx bxl-instagram"></i>
             </a>
           </div>

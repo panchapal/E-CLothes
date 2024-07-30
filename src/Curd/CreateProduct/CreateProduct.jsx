@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
-import { Box, Typography, TextField, Button, InputAdornment } from "@mui/material";
+import { Box, Typography, TextField, Button } from "@mui/material";
 import { product_create } from "../../Redux/cartSlice";
 import "./CreateProduct.css"
 

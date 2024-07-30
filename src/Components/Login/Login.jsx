@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useForm } from 'react-hook-form';
 import { logIn } from '../../Redux/authSlice';
@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 import './Login.css';
 
 const Login = () => {
-  const {upload_status, redirectContact } = useSelector((state) => state.contents);
+  const {upload_status } = useSelector((state) => state.contents);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
