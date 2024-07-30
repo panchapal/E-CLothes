@@ -4,16 +4,18 @@ import { useNavigate, useParams } from "react-router-dom";
 import { product_update, product_edit } from "../../Redux/cartSlice";
 import { Box, Grid, TextField, Typography, Button } from "@mui/material";
 import { useForm } from "react-hook-form";
-import "./EditProduct.css"
+import "./EditProduct.css";
+
 const EditProduct = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
   const navigate = useNavigate();
   
-  
   useEffect(() => {
-    dispatch(product_edit(id));
-  },[id]);
+    if (id) {
+      dispatch(product_edit(id));
+    }
+  }, [id, dispatch]);
 
   const { product } = useSelector((state) => state.productt);
   const { register, handleSubmit, setValue, formState: { errors } } = useForm();
@@ -29,7 +31,9 @@ const EditProduct = () => {
     const formData = new FormData();
     formData.append("title", data.title);
     formData.append("description", data.description);
-    formData.append("image", data.image[0]);
+    if (data.image.length > 0) {
+      formData.append("image", data.image[0]);
+    }
     formData.append('id', id);
 
     dispatch(product_update(formData)).then(() => {
@@ -70,9 +74,7 @@ const EditProduct = () => {
                 type="file"
                 variant="outlined"
                 accept="image/*"
-                {...register("image", { required: "Image is required" })}
-                error={!!errors.image}
-                helperText={errors.image?.message}
+                {...register("image")}
               />
             </Grid>
             <Grid item xs={12}>
