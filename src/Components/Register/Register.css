@@ -1,0 +1,58 @@
+.register{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+  padding-top:80px
+}
+  .grid {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+
+
+#upload-profile-pic {
+    display: none;
+  }
+  
+  #upload-profile-pic-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3f51b5; 
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  #upload-profile-pic-label:hover {
+    background-color: #303f9f; 
+  }
+  
+  #upload-profile-pic-label:active {
+    background-color: #283593; 
+  }
+  
+  .custom-file-upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custom-file-upload span {
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #3f51b5;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  

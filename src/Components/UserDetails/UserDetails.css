@@ -1,0 +1,15 @@
+.content6{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: 10px;
+}
+.paper{
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+}
+.paper h4{
+    padding-bottom: 6px;
+}

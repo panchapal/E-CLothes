@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+.home_page img {
+    height: 100vh;
+    width: 100%;
+    background-position:center;
+    position: relative;
+    background-size: cover;
+}
+
+.home_txt {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+.home_txt p {
+    color: rgb(241, 78, 106);
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-family: Mona Sans;
+    font-size: 16px;
+}
+
+.home_txt h2 {
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 53px;
+    color: var(--light-black);
+    font-family: "Space Grotesk", sans-serif;}
+
+.home_txt .home_label p {
+    color: rgb(37, 36, 36);
+    font-size: 17px;
+    padding-top: 6px;
+    letter-spacing: 2px;
+    font-family: "Raleway", sans-serif;
+}
+
+.home_txt a {
+    text-decoration: none;
+    color: white;
+}
+
+.home_txt button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.home_txt .bx-right-arrow-alt {
+    font-size: 25px;
+    padding-left: 5px;
+}
+
+.home_txt .home_social_icons a {
+    text-decoration: none;
+    color: var(--light-black);
+    margin-right: 15px;
+    font-size: 23px;
+}
+.button {
+    width: 180px;
+    height: 50px;
+    background-image: linear-gradient(rgb(20, 20, 20), rgb(49, 47, 56));
+    border: none;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    box-shadow: 1px 3px 0px rgb(139, 113, 255);
+    transition-duration: .3s;
+  }
+  
+  .cartIcon {
+    width: 14px;
+    height: fit-content;
+  }
+  
+  .cartIcon path {
+    fill: white;
+  }
+  
+  .button:active {
+    transform: translate(2px ,0px);
+    box-shadow: 0px 1px 0px rgb(139, 113, 255);
+    padding-bottom: 1px;
+  }
+  
