@@ -82,7 +82,7 @@ function Header() {
 
   return (
     <div className='header'>
-      <AppBar className='app' position="fixed" sx={{backgroundColor:'white'}}>
+      <AppBar className='app' position="fixed">
         <Container maxWidth="xl">
           <Toolbar disableGutters sx={{ justifyContent: 'space-between' }}>
             <Typography
